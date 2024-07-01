@@ -6,7 +6,7 @@
 {                                                                        }
 {                              Skia4Delphi                               }
 {                                                                        }
-{ Copyright (c) 2021-2023 Skia4Delphi Project.                           }
+{ Copyright (c) 2021-2024 Skia4Delphi Project.                           }
 {                                                                        }
 { Use of this source code is governed by the MIT license that can be     }
 { found in the LICENSE file.                                             }
@@ -90,7 +90,7 @@ begin
   end;
 end;
 
-function TryBuildRADStudioPackages(const ARADStudioInfos: TRADStudioInfos; const AGroupProjects: TRADStudioGroupProjects; const ACustomParameter: string; 
+function TryBuildRADStudioPackages(const ARADStudioInfos: TRADStudioInfos; const AGroupProjects: TRADStudioGroupProjects; const ACustomParameter: string;
   const ABeforeProjectBuild: TBeforeProjectBuildProc; const ATryExtractPreBuildObjects: TTryExtractPreBuildObjectsProc): Boolean;
 var
   I, J, K: Integer;
@@ -151,7 +151,7 @@ begin
   Result := True;
 end;
 
-function _TryBuildRADStudioProject(const ARADStudioInfo: TRADStudioInfo; const AConfig: TProjectConfig; const APlatform: TProjectPlatform; 
+function _TryBuildRADStudioProject(const ARADStudioInfo: TRADStudioInfo; const AConfig: TProjectConfig; const APlatform: TProjectPlatform;
   const AProject: TRADStudioProject; const ACustomParameter, ALogFileName: string; const ABeforeProjectBuild: TBeforeProjectBuildProc; out AResultCode: Integer): Boolean;
 var
   LProjectDir: string;
